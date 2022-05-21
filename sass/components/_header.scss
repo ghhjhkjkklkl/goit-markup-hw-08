@@ -1,0 +1,63 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+    .container {
+   @extend %align-items;
+}
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-list__item:not(:last-child) {
+margin-right: 50px;
+}
+.menu-list__link {
+     @include font (14px, 1.14, 500, 0.02em);
+color: #212121;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: all;
+&.current {
+    color: var(--acent-color);
+    }
+&:hover, &:focus {
+    color: #2196F3;
+}
+}
+
+.menu-list__line::after {
+content: "";
+position: absolute;
+bottom: 0;
+width: 48px;
+height: 4px;
+background-color: #2196F3;
+border-radius: 2px;
+display: flex;
+}
+.contact-list__link {
+     @include font (14px, 1.14, 500, 0.02em);
+    color: var(--text-color); 
+    @extend %align-items;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: all;
+    &:hover, &:focus {
+    color: #2196F3;
+}
+}
+.contact-list {
+    display: flex;
+}
+.contact {
+    margin-left: auto;
+}
+.contact-list__item {
+    margin-right: 50px;
+}
+
+.contact-list__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
