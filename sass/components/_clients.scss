@@ -1,28 +1,63 @@
 .clients {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+
+     padding-top: 60px;
+     @media screen and (min-width:1200px) {
+         padding-top: 94px;
+     }
+     }
+
+     
     .clients-title {
-        @extend %align-items;
-        margin-bottom: 50px;  
+        @include font (28px, 1.18, 700, 0.03em);
+        @media screen and (min-width:1200px) {
+     @include font (36px, 1.16, 700, 0.03em);
+     } 
+        @extend %align-list;
+        justify-content: center;
+        margin-bottom: 30px;  
+        @media screen and (min-width:1200px) {
+     margin-bottom: 50px;
+     } 
     }
     .clients-list {
-        @extend %align-items;
+        //@extend %align-list;
+         margin-right: -15px;
+        margin-left: -15px;
+        display: flex;
+       flex-wrap: wrap;
+        
     }
-    .clients-list-icon:not(:last-child) {
-     margin-right: 30px;
+    //.clients-list-icon:not(:last-child) {
+     //margin-right: 30px;
+    //}
+
+    .clients-list-icon {
+        @media screen and (min-width:480px) {
+     width: calc(100%/2 - 30px);
+     }
+        @media screen and (min-width:768px) {
+     width: calc(100%/3 - 30px);
+     }
+    @media screen and (min-width:1200px) {
+     width: calc(100%/6 - 30px);
+     } 
+        margin-right: 15px;
+        margin-left: 15px;
     }
     .clients-icon-link {
-        width: 170px;
+        width: 100%;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-         @extend %align-items;
+         @extend %align-list;
+         justify-content: center;
+         margin-bottom: 30px;
 
         fill: #AFB1B8; 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
         transition-property: all; 
-        &:hover, &:focus {
+        &:hover,
+         &:focus {
         border-color: #2196F3;
         fill: #2196F3;
     }

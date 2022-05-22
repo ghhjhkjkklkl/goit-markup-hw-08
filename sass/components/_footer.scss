@@ -2,10 +2,11 @@
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #2F303A;
- .container {
-    display: flex;
-    align-items: baseline;
-}
+// .container {
+//     display: flex;
+//     align-items: center;
+// }
+
 }
 .footer-contact-logo {
     margin-right: 70px;
@@ -48,7 +49,7 @@ padding-top: 12px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);;
     border-radius: 50%;
-    @extend %align-items;
+    @extend %align-list;
     fill: #FFFFFF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: all;
@@ -95,13 +96,13 @@ text-align: center;
 color: #FFFFFF;
 margin-left: 10px;
 border: none;
-@extend %align-items;
+
 }
 
 .footer-button-icon {
     fill: #FFFFFF;
     margin-left: 10px;
 }
-.footer-top {
-    display: flex;
+ .footer-top {
+    justify-content: center;
 }

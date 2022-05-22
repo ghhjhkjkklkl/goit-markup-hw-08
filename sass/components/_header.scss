@@ -3,12 +3,12 @@
     padding-bottom: 24px;
     position: relative;
     .container {
-   @extend %align-items;
+  @extend %align-list;
 }
 }
 
-.menu-list {
-    display: flex;
+ .menu-list {
+     display: flex;
 }
 
 .menu-list__item:not(:last-child) {
@@ -40,7 +40,7 @@ display: flex;
 .contact-list__link {
      @include font (14px, 1.14, 500, 0.02em);
     color: var(--text-color); 
-    @extend %align-items;
+    @extend %align-list;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: all;
     &:hover, &:focus {

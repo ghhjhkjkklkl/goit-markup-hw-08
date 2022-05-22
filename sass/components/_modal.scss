@@ -33,7 +33,7 @@ transition-property: all;
     background-color : #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
-@extend %align-items;
+@extend %align-list;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, &:focus + .button-close-icon{
 fill: var(--acent-color);
@@ -103,17 +103,17 @@ color: rgba(117, 117, 117, 0.5);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-checkbox {
-    @extend %align-items;
+    @extend %align-list;
     margin-bottom: 30px;
 }
 .check-text {
      @include font (14px, 1.71, 400, 0.03em);
 color: #757575;
-@extend %align-items;
+@extend %align-list;
  span {
     width: 16px;
     height: 15px;
-    @extend %align-items;
+    @extend %align-list;
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 8.38px;

@@ -4,7 +4,7 @@
 }
 .about-title {
     margin-bottom: 50px;
-@extend %align-items;
+   @extend %align-list;
 }
 .about-list {
     display: flex;
@@ -26,5 +26,5 @@ text-transform: uppercase;
 color: #FFFFFF;
 background-color: rgba(47, 48, 58, 0.8);
 
-@extend %align-items;
+@extend %align-list;
 }
