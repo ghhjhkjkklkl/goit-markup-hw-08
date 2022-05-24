@@ -71,7 +71,7 @@ img {
   margin: -1px;
 }
 
-.check-text span, .check-text, .modal-field-checkbox, .modal-close-bt, .footer-soc-link, .clients-icon-link, .clients-title, .team-soc-link, .team-soc-list, .team-list-profession, .team-list-name, .team-title, .about-text, .about-title, .benefits-list-link, .contact-list__link, .header .container {
+.check-text span, .check-text, .modal-field-checkbox, .modal-close-bt, .footer-soc-link, .footer-logo-color, .clients-icon-link, .clients-title, .team-soc-link, .team-soc-list, .team-list-profession, .team-list-name, .team-title, .about-text, .about-title, .benefits-list-link, .contact-list__link, .header .container {
   display: flex;
   align-items: center;
 }
@@ -179,28 +179,57 @@ img {
 
 .hero {
   background-color: #2F303A;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotitle.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotitle-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 1600px;
+  min-width: 100%;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotitle-tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herotitle.jpg);
+  }
 }
 
 .hero__title {
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  width: 696px;
+  width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: var(--typical-margin);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+  }
 }
 
 .hero__btn {
@@ -339,6 +368,7 @@ img {
 .team {
   background-color: #F5F4FA;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -347,8 +377,25 @@ img {
 }
 
 .team-title {
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.18;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -509,11 +556,12 @@ img {
 }
 
 .footer-contact-logo {
-  margin-right: 70px;
+  justify-content: center;
 }
 
 .footer-logo-color {
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .footer-contact:not(:last-child) {
@@ -528,6 +576,7 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   margin-bottom: 9px;
+  justify-content: center;
 }
 
 .footer-link {

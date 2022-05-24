@@ -2,6 +2,7 @@
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: #2F303A;
+
 // .container {
 //     display: flex;
 //     align-items: center;
@@ -9,10 +10,15 @@ background-color: #2F303A;
 
 }
 .footer-contact-logo {
-    margin-right: 70px;
+ //@extend %align-list;
+    justify-content: center;
+
+   // margin-right: 70px;
 }
 .footer-logo-color {
     margin-bottom: 20px;
+    @extend %align-list;
+    justify-content: center;
 }
 
 .footer-contact:not(:last-child) {
@@ -23,6 +29,7 @@ font-style: normal;
 @include font (14px, 1.71, 400, 0.03em);
 color: #FFFFFF;
 margin-bottom: 9px;
+justify-content: center;
 }
 .footer-link {
     @include font (14px, 1.71, 400, 0.03em);
@@ -39,6 +46,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 padding-top: 12px;
 }
+
 
 .footer-soc-list {
     display: flex;
