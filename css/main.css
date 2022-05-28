@@ -594,15 +594,22 @@ img {
 .footer-contact-logo {
   justify-content: center;
 }
-
 .footer-logo-color {
   margin-bottom: 20px;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-logo-color {
+    text-align: center;
+  }
 }
 
 .footer-contact {
-  text-align: center;
   margin-bottom: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-contact {
+    text-align: center;
+  }
 }
 
 .adress {
@@ -614,6 +621,11 @@ img {
   color: #FFFFFF;
   margin-bottom: 9px;
   text-align: center;
+}
+@media screen and (min-width: 1199px) {
+  .adress {
+    margin-right: 60px;
+  }
 }
 
 .footer-link {
@@ -638,9 +650,10 @@ img {
   margin-top: 60px;
   margin-bottom: 20px;
 }
-
-.footer-soc {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer-text {
+    text-align: center;
+  }
 }
 
 .footer-soc-list {
@@ -668,13 +681,6 @@ img {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .footer-input-button {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .footer-input-text {
   font-size: 14px;
   line-height: 1.14;
@@ -684,11 +690,16 @@ img {
   color: #FFFFFF;
   margin-top: 60px;
   margin-bottom: 20px;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-input-text {
+    text-align: center;
+  }
 }
 
 .footer-input {
   width: 100%;
+  margin-left: auto;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -726,8 +737,15 @@ img {
   margin-left: 10px;
 }
 
-.footer-top {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer-top {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-top {
+    display: flex;
+  }
 }
 
 .header-portfolio {
