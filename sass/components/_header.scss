@@ -1,10 +1,29 @@
 .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width:768px) and (max-width:1199px)  {
+     padding-top: 26px;
+    padding-bottom: 26px;
+     } 
+ @media screen  and (max-width:1200px) {
     padding-top: 24px;
     padding-bottom: 24px;
-    position: relative;
+    position: relative;}
     .container {
   @extend %align-list;
 }
+}
+.menu-open-btn  {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+
+
+.navigation {
+    @media screen and (max-width:767px) {
+    display: none;
+     } 
 }
 
  .menu-list {
@@ -37,6 +56,11 @@ background-color: #2196F3;
 border-radius: 2px;
 display: flex;
 }
+.contact {
+    @media screen and (max-width:767px) {
+    display: none;
+     }  
+}
 .contact-list__link {
      @include font (14px, 1.14, 500, 0.02em);
     color: var(--text-color); 
@@ -61,3 +85,35 @@ display: flex;
     fill: currentColor;
     margin-right: 10px;
 }
+
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 48px;
+   
+    .container {
+        display: block;
+         
+    }
+}
+
+.menu-close-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+ .mob-menu-list {
+     margin-bottom: 302px;
+ }
+ .menu-list__link {
+    @include font (40px, 1.17, 500, 0.02em); 
+    color: #212121; 
+    margin-left: 40px;
+ }

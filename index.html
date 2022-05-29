@@ -14,10 +14,16 @@
 </head>
 <body>
 
-     <!-- <header class="header"> 
+      <header class="header"> 
         <div class="container">
         <a class="logo link" href="./images/w.svg"><span class="logo--color">Web</span>Studio</a>
-        <nav>
+       <button type="button" class="menu-open-btn">
+           <svg class="" width="40" height="40">
+                    <use href="./images/icons.svg#icon-nav_menu"></use>
+                </svg>
+       </button>
+       
+        <nav class="navigation">
         <ul class="menu-list list">
             <li class="menu-list__item"><a href="" class="menu-list__link current link menu-list__line">Студия</a></li>
             <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link">Портфолио</a></li>
@@ -35,7 +41,37 @@
     </ul>
     </div>
     </div>
-    </header> -->
+    <div class="mob-menu">
+        <div class="container">
+          <button type="button" class="menu-close-btn">
+           <svg class="" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-btn-mob"></use>
+                </svg>
+       </button>
+        <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item"><a href="" class="menu-list__link current link menu-list__line">Студия</a></li>
+            <li class="mob-menu-list__item"><a href="./portfolio.html" class="menu-list__link link">Портфолио</a></li>
+            <li class="mob-menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
+        </ul> 
+        <div>
+    <ul class="mob-contact-list list">
+    <li class="mob-contact-list__item"><a class="mob-contact-list__link link" href="mailto:info@devstudio.com"><svg class="mob-contact-list__icon" width="16" height="12">
+        <use href="./images/icons.svg#icon-envelope"></use>
+    </svg>info@devstudio.com</a></li>
+    <li class="mob-contact-list__item"><a class="mob-contact-list__link link" href="tel:+380961111111"><svg class="mob-contact-list__icon" width="10" height="16">
+        <use href="./images/icons.svg#icon-smartphone"></use>
+    </svg>+38 096 111 11 11</a></li>
+    </ul>
+    </div>
+    <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">LinkedIn</a></li>
+    </ul>
+    </div>
+    </div>
+    </header>
     <main>
  <section class="hero">
     <div class="container">
@@ -117,14 +153,24 @@
     <h2 class="team-title title">Наша команда</h2>
     <ul class="team-list list">
         <li class="team-item">
-            <img srcset="
+<picture>
+    <source  srcset="
             ./images/img-comanda1.jpg 1x,
-            ./images/img-comanda1-2x.jpg 2x
-            "
-            src="./images/img-comanda1.jpg" alt="Product Designer"
-           
-         width="270"
-        height="260">
+            ./images/img-comanda1-2x.jpg 2x"
+             media="(min-width:1200px)" >
+
+     <source  srcset="
+            ./images/img-comanda1-tab.jpg 1x,
+            ./images/img-comanda1-tab-2x.jpg 2x"
+             media="(min-width:768px)" >
+    <source  srcset="
+            ./images/img-comanda1-mob.jpg 1x,
+            ./images/img-comanda1-mob-2x.jpg 2x"
+             media="(min-width:480px)" >      
+         <img
+            src="./images/img-comanda1.jpg" alt="Product Designer"> 
+</picture>
+
         <div class="team-list-group">
             <p class="team-list-name">Игорь Демьяненко</p>
             <p class="team-list-profession" lang="en">Product Designer</p>
@@ -154,15 +200,25 @@
         </ul>
         </li>
         <li class="team-item">
-            <img 
-            srcset="
+<picture>
+    <source  srcset="
             ./images/img-comanda2.jpg 1x,
-            ./images/img-comanda2-2x.jpg 2x
-            "
-            src="./images/img-comanda2.jpg" 
-            alt="Frontend Developer"
-            width="270"
-        height="260">
+            ./images/img-comanda2-2x.jpg 2x"
+             media="(min-width:1200px)" >
+
+     <source  srcset="
+            ./images/img-comanda2-tab.jpg 1x,
+            ./images/img-comanda2-tab-2x.jpg 2x"
+             media="(min-width:768px)" >
+    <source  srcset="
+            ./images/img-comanda2-mob.jpg 1x,
+            ./images/img-comanda2-mob-2x.jpg 2x"
+             media="(min-width:480px)" >      
+         <img
+            src="./images/img-comanda2.jpg" alt="Product Designer"> 
+</picture>
+
+        
             <div class="team-list-group">
         <p class="team-list-name">Ольга Репина</p>
         <p class="team-list-profession" lang="en">Frontend Developer</p>
@@ -191,15 +247,24 @@
        </ul>
     </li>
         <li class="team-item">
-            <img 
-            srcset="
+<picture>
+    <source  srcset="
             ./images/img-comanda3.jpg 1x,
-            ./images/img-comanda3-2x.jpg 2x
-            "
-            src="./images/img-comanda3.jpg"
-             alt="Marketing"
-             width="270"
-        height="260">
+            ./images/img-comanda3-2x.jpg 2x"
+             media="(min-width:1200px)" >
+
+     <source  srcset="
+            ./images/img-comanda3-tab.jpg 1x,
+            ./images/img-comanda3-tab-2x.jpg 2x"
+             media="(min-width:768px)" >
+    <source  srcset="
+            ./images/img-comanda3-mob.jpg 1x,
+            ./images/img-comanda3-mob-2x.jpg 2x"
+             media="(min-width:480px)" >      
+         <img
+            src="./images/img-comanda3.jpg" alt="Product Designer"> 
+</picture>
+
              <div class="team-list-group">
         <p class="team-list-name">Николай Тарасов</p>
         <p class="team-list-profession" lang="en">Marketing</p>
@@ -229,15 +294,26 @@
        </ul>
     </li>
         <li class="team-item">
-            <img 
-            srcset="
+<picture>
+    <source  srcset="
             ./images/img-comanda4.jpg 1x,
-            ./images/img-comanda4-2x.jpg 2x
-            "
-            src="./images/img-comanda4.jpg"
-             alt="UI Designer"
-             width="270"
-        height="260">
+            ./images/img-comanda4-2x.jpg 2x"
+             media="(min-width:1200px)" >
+
+     <source  srcset="
+            ./images/img-comanda4-tab.jpg 1x,
+            ./images/img-comanda4-tab-2x.jpg 2x"
+             media="(min-width:768px)" >
+    <source  srcset="
+            ./images/img-comanda4-mob.jpg 1x,
+            ./images/img-comanda4-mob-2x.jpg 2x"
+             media="(min-width:480px)" >      
+         <img
+            src="./images/img-comanda4.jpg" alt="Product Designer"> 
+</picture>
+
+
+        
              <div class="team-list-group">
         <p class="team-list-name">Михаил Ермаков</p>
         <p class="team-list-profession" lang="en">UI Designer</p>
