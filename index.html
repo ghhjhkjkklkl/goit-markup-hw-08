@@ -16,7 +16,9 @@
 
       <header class="header"> 
         <div class="container">
-        <a class="logo link" href="./images/w.svg"><span class="logo--color">Web</span>Studio</a>
+           <a class="logo link" href=""> <svg class="" width="134" height="28" >
+                    <use href="./images/icons.svg#icon-w"></use>
+                </svg></a>
        <button type="button" class="menu-open-btn">
            <svg class="" width="40" height="40">
                     <use href="./images/icons.svg#icon-nav_menu"></use>
@@ -41,33 +43,32 @@
     </ul>
     </div>
     </div>
-    <div class="mob-menu">
+    <div class="mob-menu is-hidden">
         <div class="container">
+            <div class="mob-menu-top">
           <button type="button" class="menu-close-btn">
            <svg class="" width="40" height="40">
                     <use href="./images/icons.svg#icon-close-btn-mob"></use>
                 </svg>
        </button>
         <ul class="mob-menu-list list">
-            <li class="mob-menu-list__item"><a href="" class="menu-list__link current link menu-list__line">Студия</a></li>
-            <li class="mob-menu-list__item"><a href="./portfolio.html" class="menu-list__link link">Портфолио</a></li>
-            <li class="mob-menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
+            <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link current link menu-list__line">Студия</a></li>
+            <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link link">Портфолио</a></li>
+            <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link link">Контакты</a></li>
         </ul> 
+        </div>
         <div>
     <ul class="mob-contact-list list">
-    <li class="mob-contact-list__item"><a class="mob-contact-list__link link" href="mailto:info@devstudio.com"><svg class="mob-contact-list__icon" width="16" height="12">
-        <use href="./images/icons.svg#icon-envelope"></use>
-    </svg>info@devstudio.com</a></li>
-    <li class="mob-contact-list__item"><a class="mob-contact-list__link link" href="tel:+380961111111"><svg class="mob-contact-list__icon" width="10" height="16">
-        <use href="./images/icons.svg#icon-smartphone"></use>
-    </svg>+38 096 111 11 11</a></li>
+   
+    <li class="mob-contact-list__item"><a class="mob-contact-list__tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+     <li class="mob-contact-list__item"><a class="mob-contact-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
     </ul>
     </div>
-    <ul>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">LinkedIn</a></li>
+    <ul class="mob-soc-list list">
+        <li><a class="mob-soc-list__link link" href="">Instagram</a></li>
+        <li><a  class="mob-soc-list__link link" href="">Twitter</a></li>
+        <li><a class="mob-soc-list__link link"  href="">Facebook</a></li>
+        <li><a class="mob-soc-list__link link"  href="">LinkedIn</a></li>
     </ul>
     </div>
     </div>
@@ -120,7 +121,10 @@
 <ul class="about-list list">
     <li class="about-item">
         <div class="about-top-wrap">
-        <img src="./images/img1.jpg" 
+        <img 
+        srcset="./images/img1.jpg 1x,
+            ./images/img1-2x.jpg 2x"
+        src="./images/img1.jpg" 
         alt="человек работает за компьютером"
         width="370"
         height="294">
@@ -129,7 +133,10 @@
     </li>
     <li class="about-item">
         <div class="about-top-wrap">
-        <img src="./images/img2.jpg" 
+        <img 
+         srcset="./images/img2.jpg 1x,
+            ./images/img2-2x.jpg 2x"
+        src="./images/img2.jpg" 
         alt="человек работает за компьютером"
         width="370"
         height="294">
@@ -138,7 +145,10 @@
     </li>
     <li class="about-item">
         <div class="about-top-wrap">
-        <img src="./images/img3.jpg"
+        <img 
+         srcset="./images/img3.jpg 1x,
+            ./images/img3-2x.jpg 2x"
+        src="./images/img3.jpg"
         alt="человек работает за компьютер"
         width="370"
         height="294">
@@ -374,7 +384,9 @@
         <div class="container">
             <div class="footer-contact-logo">
         <div class="footer-logo-color">
-        <a class="footer-logo link"  href="./images/webstudio1.svg"> <span class="logo--color" >Web</span>Studio</a>
+ <a class="footer-logo link" href=""> <svg class="" width="154" height="28" >
+                    <use href="./images/icons.svg#icon-webstudio1"></use>
+                </svg></a>
     </div>
         <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="list">
@@ -480,8 +492,9 @@
                 <button type="submit" class="modal-send-btn">Отправить</button>
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div>-->
+    <script src="./js/modal.js"></script> 
+     <script src="./js/mobile-menu.js"></script> 
 </body>
 </html>
 

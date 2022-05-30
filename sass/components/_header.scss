@@ -14,9 +14,13 @@
 }
 }
 .menu-open-btn  {
+   @media screen and (min-width:768px) {
+    display: none;
+     } 
     margin-left: auto;
     border: none;
     background-color: transparent;
+    
 }
 
 
@@ -57,9 +61,12 @@ border-radius: 2px;
 display: flex;
 }
 .contact {
-    @media screen and (max-width:767px) {
-    display: none;
-     }  
+    // @media screen and (max-width:767px) {
+    // display: none;
+    //  }  
+    @media screen and (max-width:1199px) {
+    display: block;
+     }    
 }
 .contact-list__link {
      @include font (14px, 1.14, 500, 0.02em);
@@ -72,9 +79,15 @@ display: flex;
 }
 }
 .contact-list {
+    margin-left: 84px;
+    @media screen and (min-width:1200px) {
     display: flex;
 }
+}
 .contact {
+     @media screen and (max-width:767px) {
+    display: none;
+     }  
     margin-left: auto;
 }
 .contact-list__item {
@@ -96,24 +109,71 @@ display: flex;
     height: 100vh;
     padding-top: 10px;
     padding-bottom: 48px;
-   
+    padding-left: 40px;
+    overflow-y: scroll;
     .container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
          
     }
 }
 
+.mob-menu-top {
+    width: 100%;
+}
 .menu-close-btn {
     display: block;
     margin-left: auto;
     border: none;
     background-color: transparent;
+     &:hover, &:focus {
+    color: #2196F3;
+     }
 }
- .mob-menu-list {
-     margin-bottom: 302px;
- }
- .menu-list__link {
+//   .mob-menu-list {
+//      margin-bottom: 302px;
+//   }
+
+ .mob-menu-list__link {
     @include font (40px, 1.17, 500, 0.02em); 
     color: #212121; 
-    margin-left: 40px;
+    &.current {
+    color: var(--acent-color);
+    }
+   // margin-left: 40px;
  }
+// .mob-contact-list {
+//    margin-left: 40px;  
+// }
+ .mob-contact-list__tel {
+  @include font (34px, 1.17, 500, 0.02em);  
+  color: #2196F3; 
+  
+  margin-bottom: 32px; 
+
+
+ }
+
+ .mob-contact-list__mail {
+    @include font (24px, 1.18, 500, 0.02em);  
+  color: #757575; 
+
+ }
+
+ .mob-soc-list {
+     display: flex;
+     margin-top: 64px;
+ }
+
+ .mob-soc-list__link {
+    @include font (18px, 1.22, 500, 0.02em);  
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);;
+ // margin-left: 40px;    
+ }
+.no-scroll {
+    overflow: hidden;
+}

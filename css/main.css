@@ -129,6 +129,11 @@ img {
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .navigation {
@@ -171,9 +176,9 @@ img {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .contact {
-    display: none;
+    display: block;
   }
 }
 
@@ -191,11 +196,21 @@ img {
 }
 
 .contact-list {
-  display: flex;
+  margin-left: 84px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+  }
 }
 
 .contact {
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
 }
 
 .contact-list__item {
@@ -217,9 +232,19 @@ img {
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
+  padding-left: 40px;
+  overflow-y: scroll;
 }
 .mob-menu .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mob-menu-top {
+  width: 100%;
 }
 
 .menu-close-btn {
@@ -228,18 +253,54 @@ img {
   border: none;
   background-color: transparent;
 }
-
-.mob-menu-list {
-  margin-bottom: 302px;
+.menu-close-btn:hover, .menu-close-btn:focus {
+  color: #2196F3;
 }
 
-.menu-list__link {
+.mob-menu-list__link {
   font-size: 40px;
   line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #212121;
-  margin-left: 40px;
+}
+.mob-menu-list__link.current {
+  color: var(--acent-color);
+}
+
+.mob-contact-list__tel {
+  font-size: 34px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-bottom: 32px;
+}
+
+.mob-contact-list__mail {
+  font-size: 24px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-soc-list {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mob-soc-list__link {
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .hero {
