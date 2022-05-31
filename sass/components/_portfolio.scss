@@ -20,6 +20,9 @@ display: flex;
 }
 
 .galery {
+    
+
+    padding-top: 60px;
     padding-bottom: 60px;
      @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -57,6 +60,7 @@ margin-bottom: 50px;
   
 .button-galery-btn:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 10px;
 }
 .galery-btn {
     border: none;
@@ -75,9 +79,9 @@ transition-property: all;
 }
 }
 
-.galery-items {
-    margin-bottom: 94px;
-}
+// .galery-items {
+//     margin-bottom: 94px;
+// }
 .galery-list {
     display: flex;
     flex-wrap: wrap;
