@@ -1,8 +1,14 @@
 .logo {
     font-family: 'Raleway';
      @include font (26px, 1.19, 700, 0.03em);
-    color: #212121;  
-    margin-right: 93px;  
+    color: #212121; 
+      @media screen  and (min-width:768px) {
+    margin-right: 88px;  
+    }
+    @media screen  and (min-width:1200px) {
+    margin-right: 93px; 
+    margin-left: 215px; 
+    }
   }
   .footer-logo {
       
