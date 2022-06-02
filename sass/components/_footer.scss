@@ -19,6 +19,11 @@ background-color: #2F303A;
      }
 }
 }
+ .footer-contact-logo {
+     @media screen and (min-width: 1200px) {
+ margin-right: 60px;
+}
+ }
 // .footer-contact-logo {
 //  //@extend %align-list;
 //    // justify-content: center;
@@ -57,10 +62,10 @@ font-style: normal;
 @include font (14px, 1.71, 400, 0.03em);
 color: #FFFFFF;
 margin-bottom: 9px;
-// @media screen and (min-width: 1199px) {
+ @media screen and (min-width: 1200px) {
    
    // margin-right: 60px;
-   // }
+    }
    
 
  
@@ -162,6 +167,7 @@ margin-bottom: 20px;
 &::placeholder {
      @include font (16px, 1.25, 400, 0.03em);
 }
+padding-left: 16px;
 }
 
 .footer-button {
