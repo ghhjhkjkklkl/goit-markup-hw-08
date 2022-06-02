@@ -71,7 +71,7 @@ img {
   margin: -1px;
 }
 
-.check-text span, .check-text, .modal-field-checkbox, .modal-close-bt, .footer-soc-link, .clients-icon-link, .clients-title, .team-soc-link, .team-soc-list, .team-list-profession, .team-list-name, .team-title, .about-text, .about-title, .benefits-list-link, .contact-list__link, .header .container {
+.check-text span, .check-text, .modal-field-checkbox, .modal-close-bt, .header-portfolio .container, .footer-soc-link, .clients-icon-link, .clients-title, .team-soc-link, .team-soc-list, .team-list-profession, .team-list-name, .team-title, .about-text, .about-title, .benefits-list-link, .contact-list__link, .header .container {
   display: flex;
   align-items: center;
 }
@@ -100,7 +100,6 @@ img {
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 93px;
-    margin-left: 215px;
   }
 }
 
@@ -118,6 +117,7 @@ img {
 }
 
 .header {
+  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -131,7 +131,6 @@ img {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
-    position: relative;
   }
 }
 .menu-open-btn {
@@ -281,6 +280,10 @@ img {
 }
 .menu-close-btn:hover, .menu-close-btn:focus {
   fill: #2196F3;
+}
+
+.mob-menu-list__item {
+  margin-bottom: 32px;
 }
 
 .mob-menu-list__link {
@@ -655,11 +658,13 @@ img {
 }
 
 .clients {
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -733,7 +738,7 @@ img {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
     display: flex;
     flex-wrap: wrap;
@@ -748,9 +753,6 @@ img {
   }
 }
 
-.footer-contact-logo {
-  justify-content: center;
-}
 .footer-logo-color {
   margin-bottom: 20px;
 }
@@ -779,11 +781,6 @@ img {
   margin-bottom: 9px;
   text-align: center;
 }
-@media screen and (min-width: 1199px) {
-  .adress {
-    margin-right: 60px;
-  }
-}
 
 .footer-link {
   font-size: 14px;
@@ -804,7 +801,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
@@ -838,6 +834,12 @@ img {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-input-button {
+    margin-left: auto;
+  }
+}
+
 .footer-input-text {
   font-size: 14px;
   line-height: 1.14;
@@ -845,12 +847,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .footer-input-text {
     text-align: center;
+    margin-top: 60px;
   }
 }
 
@@ -862,6 +864,11 @@ img {
   border-radius: 4px;
   background-color: #2F303A;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
 }
 .footer-input::placeholder {
   font-size: 16px;
@@ -907,15 +914,22 @@ img {
 
 .header-portfolio {
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
 }
-.header-portfolio .container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-portfolio {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
-
+@media screen and (min-width: 1200px) {
+  .header-portfolio {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 .menu-list__line-portfolio::after {
   content: "";
   position: absolute;
@@ -956,7 +970,17 @@ img {
 }
 
 .button-galery {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .button-galery {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-galery {
+    margin-bottom: 50px;
+  }
 }
 
 .button-galery-list {
@@ -1081,6 +1105,11 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     width: 95vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    width: 60vw;
   }
 }
 .backdrop.is-hidden .modal {
