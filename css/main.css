@@ -808,6 +808,11 @@ img {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .footer-text {
+    margin-top: 60px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .footer-text {
     text-align: center;
@@ -853,6 +858,11 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer-input-text {
+    margin-top: 60px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .footer-input-text {
@@ -905,6 +915,7 @@ img {
 .footer-button-icon {
   fill: #FFFFFF;
   margin-left: 10px;
+  margin-bottom: -5px;
 }
 
 @media screen and (max-width: 1199px) {
