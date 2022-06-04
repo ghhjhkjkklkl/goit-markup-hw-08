@@ -123,7 +123,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -711,17 +711,17 @@ img {
 }
 @media screen and (min-width: 480px) {
   .clients-list-icon {
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
   }
 }
 @media screen and (min-width: 768px) {
   .clients-list-icon {
-    width: calc(33.3333333333% - 30px);
+    width: calc(33.3333333333% - 15px);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-list-icon {
-    width: calc(16.6666666667% - 30px);
+    width: calc(16.6666666667% - 15px);
   }
 }
 
@@ -937,7 +937,6 @@ img {
 }
 
 .header-portfolio {
-  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
@@ -945,7 +944,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-portfolio {
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -954,12 +953,17 @@ img {
     padding-bottom: 24px;
   }
 }
+.menu-list__item {
+  position: relative;
+}
+
 .menu-list__line-portfolio::after {
   content: "";
+  display: block;
   position: absolute;
-  bottom: 0;
   width: 78px;
   height: 4px;
+  margin-top: 28px;
   background-color: #2196F3;
   border-radius: 2px;
   display: flex;
@@ -1263,11 +1267,13 @@ img {
 .check-text span {
   width: 16px;
   height: 15px;
+  justify-content: center;
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 8.38px;
 }
-.input-check:checked + .check-text {
+
+.input-check:checked + .check-text span {
   background-color: #2196F3;
   border: none;
 }

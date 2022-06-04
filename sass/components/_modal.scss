@@ -131,16 +131,17 @@ color: #757575;
     width: 16px;
     height: 15px;
     @extend %align-list;
+    justify-content: center;
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 8.38px;
 }
-.input-check:checked + & {
+
+}
+.input-check:checked + .check-text span {
 background-color: #2196F3;
 border: none;
 }
-}
-
 
 .check-icon {
     fill: transparent;
