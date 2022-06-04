@@ -23,7 +23,8 @@ padding-bottom: 60px;
     }
     .clients-list {
         //@extend %align-list;
-         margin-right: -15px;
+        margin-bottom: -15px;
+         //margin-right: -15px;
         margin-left: -15px;
         display: flex;
        flex-wrap: wrap;
@@ -43,7 +44,8 @@ padding-bottom: 60px;
     @media screen and (min-width:1200px) {
      width: calc(100%/6 - 30px);
      } 
-        margin-right: 15px;
+     margin-bottom: 15px;
+        //margin-right: 15px;
         margin-left: 15px;
     }
     .clients-icon-link {
@@ -53,7 +55,7 @@ padding-bottom: 60px;
         border-radius: 4px;
          @extend %align-list;
          justify-content: center;
-         margin-bottom: 30px;
+        // margin-bottom: 30px;
 
         fill: #AFB1B8; 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
