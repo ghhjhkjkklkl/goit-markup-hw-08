@@ -12,7 +12,7 @@
     }
     .container {
     @extend %align-list;
-   // align-items: center;
+   
 }
 }
 .menu-list__item {
@@ -95,9 +95,7 @@ transition-property: all;
 }
 }
 
-// .galery-items {
-//     margin-bottom: 94px;
-// }
+
 .galery-list {
     display: flex;
     flex-wrap: wrap;
